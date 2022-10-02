@@ -256,7 +256,7 @@
                 <ul class="regular-customers-list">
                     <li>
                         <a href="" class="regular-customer-link">
-                            <svg class="regular-customer" width=106px height=60px>
+                            <svg class="regular-customer-icon">
                                 <use href="./images/icon.svg#icon-companyone"></use>
                             </svg>
                         </a>
@@ -320,7 +320,8 @@
             </ul>
         </address>
         </div>
-        <div class="join-in-container">
+        <!--Join in-->
+        <div>
         <p class="join-in">приєднуйтесь</p>
             <ul class="footer-socials-links">
                 <li><a href="" class="footer-sociallink">
@@ -348,7 +349,25 @@
                     </a>
                 </li>
             </ul>
-    </div>
+        </div>
+        <!-- Subscribe -->
+        <div>
+        <p class="join-in">Підпишіться на розсилку</p>
+        <div class="Subscribe">
+        
+        <form  class="footer-mail">
+            <label>
+                <input type="email" name="email" placeholder="E-mail"/>
+            </label>
+        </form>
+        
+        <button type="submit" class="Subscribe-button">Підписатися
+            <svg class="Subscribe-button-icon">
+                <use href="./images/icon.svg#icon-icon-send"></use>
+            </svg>
+        </button>
+        </div>
+        </div>
     </div>
     </footer>
     
@@ -357,44 +376,52 @@
         <div class="modal">
             <form>
                 <legend class="modal-header">Залиште свої дані, ми вам передзвонимо</legend>
-                
             <div class="input">
-                <label>
-                    Ім'я
-                    <input type="text" name="username"/>
-                </label>
-                <label>
-                    Телефон
-                    <input type="tel" name="phone_number"/>
-                </label>
-                <label>
-                    Пошта
-                    <input type="email" name="email"/>
-                </label>
-                <label>
-                    Коментар
-                    <textarea name="comment" placeholder="Введіть текст"></textarea>
-                </label>
+                <ul>
+                <li class="modal-name">
+                    <label>
+                        Ім'я
+                        <input type="text" name="username" />
+                            <svg class="modal-icon">
+                                <use href="./images/icon.svg#icon-person"></use>
+                            </svg>
+                    </label>
+                </li>
+                <li class="modal-name">
+                    <label>
+                        Телефон
+                        <input type="tel" name="phone_number"/>
+                    </label>
+                    <svg class="modal-icon">
+                        <use href="./images/icon.svg#icon-phone-black"></use>
+                    </svg>
+                </li>
+                <li class="modal-name">
+                    <label>
+                        Пошта
+                        <input type="email" name="email"/>
+                    </label>
+                    <svg class="modal-icon">
+                        <use href="./images/icon.svg#icon-email-black"></use>
+                    </svg>
+                </li>
+                <li class="modal-name">
+                    <label>
+                        Коментар
+                        <textarea name="comment" placeholder="Введіть текст"></textarea>
+                    </label>
+                </li>
+                </ul>
             </div>
-                <label >
-                    Погоджуюся з розсилкою та приймаю Умови договору
-                    <input type="checkbox" name="" value="" checked/>
+                <label class="modal-checkbox">
+                    <span class="modal-checkbox-icon"></span>
+                    <input class="checkbox" type="checkbox" name="" value="" checked/>
+                    Погоджуюся з розсилкою та приймаю<a href="">Умови договору</a>
                 </label>
-                <button type="button" class="send-form-button">Відправити</button>
+            </form>
+                <button type="submit" class="send-form-button">Відправити</button>
             </fieldset>
         
-
-
-
-
-
-
-            <p></p>
-
-
-
-
-
             <button type="button" class="modal-close-button" data-modal-close>
                 <svg class="cross">
                     <use href="./images/icon.svg#icon-Vector"></use>
