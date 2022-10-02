@@ -262,6 +262,7 @@ body {
     text-transform: uppercase;
     color: var(--fourth-color);
 }
+/* ourteam */
 .ourteam-section {
     background-color: var(--secondary-background);
 }
@@ -323,6 +324,7 @@ body {
     width: 20px;
     height: 20px;
 }
+/* regular customers */
 .regular-customers-list {
     display: flex;
     gap: 30px;
@@ -334,7 +336,7 @@ body {
     height: 92px;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--sociallink-color);
     border-radius: 4px;
     fill: var(--sociallink-color);
     transition: border-color 250ms var(--time-distribution-function), 
@@ -349,7 +351,6 @@ body {
     width: 106px;
     height: 60px;
 }
-
 /* footer */
 .footer-background {
     background-color: var(--footer-background);
@@ -430,11 +431,11 @@ body {
     height: 20px;
     fill: var(--fourth-color);
 }
-.Subscribe {
+.footer-mail {
     display: flex;
     gap: 12px;
 }
-.Subscribe input {
+.footer-mail input {
     margin: 0;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -561,8 +562,11 @@ body {
     line-height: 1.88;
     color: var(--secondary-color)
 }
-
 /* modal */
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -596,10 +600,6 @@ body {
     color: var(--primary-color);
     margin-bottom: 12px;
 }
-.modal fieldset {
-    border: none;
-    padding: 0;
-}
 .input {
         font-size: 12px;
         line-height: 1.17;
@@ -624,62 +624,65 @@ body {
 }
 .cross {
     width: 11px;
+    height: 11px;
     fill: var(--third-color);
 }
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+.modal-element:not(:last-child) {
+    margin-bottom: 10px;
 }
 .input label {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
-.input input, textarea {
+.input-field input {
+    padding: 12px 42px;
+}
+.input-field textarea {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+}
+.input-field input,
+textarea {
     height: 40px;
     margin-top: 4px;
-    margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms var(--time-distribution-function);
 }
-.input input {
-    padding: 12px 42px;
+.input-field textarea:hover,
+.input-field textarea:focus {
+    border-color: var(--hover-color);
 }
-.input textarea {
-    resize: none;
-    min-height: 120px;
-    padding: 12px 16px;
-}
-.modal-name {
-    position: relative;
+.input-field {
     fill: var(--primary-color);
     transition: fill 250ms var(--time-distribution-function);
 }
-.modal-name:hover,
-.modal-name:focus {
+.input-field:hover {
     fill: var(--hover-color);
 }
+.input-field:focus-within {
+    fill: var(--hover-color);
+}
+.input-field input:hover,
+.input-field input:focus {
+    border-color: var(--hover-color);
+}
+
 .modal-icon {
     position: absolute;
     display: inline-block;
-    top: 55%;
+    top: 50%;
     left: 12px;
-    transform: translateY(-50%);
     width: 18px;
     height: 18px;
-}
-.modal-name input:hover,
-.modal-name input:focus {
-    border-color: var(--hover-color);
-}
-.modal-name textarea:hover,
-.modal-name textarea:focus {
-    border-color: var(--hover-color);
 }
 .modal-checkbox {
     display: flex;
     justify-content: center;
     gap: 7px;
+    margin-top: 10px;
 }
 .modal-checkbox-icon {
     width: 16px;
@@ -697,7 +700,8 @@ body {
 .checkbox:checked + .modal-checkbox-icon {
     border-color: var(--hover-color);
     background-color: var(--hover-color);
-    background-image: url(../images/icon\ check.svg);
+    background-image: url(../images/check.svg);
+    background-position: 50% 50%;
     background-size: contain;
     background-origin: border-box;
 }
