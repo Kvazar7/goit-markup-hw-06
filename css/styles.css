@@ -596,6 +596,9 @@ body {
     color: var(--primary-color);
     margin-bottom: 12px;
 }
+.modal fieldset {
+    border: none;
+}
 .input {
         font-size: 12px;
         line-height: 1.17;
@@ -687,7 +690,6 @@ body {
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .checkbox {
     appearance: none;
 }
