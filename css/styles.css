@@ -687,18 +687,21 @@ body {
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.checkbox {
+    appearance: none;
+}
+.checkbox:checked + .modal-checkbox-icon {
+    border-color: var(--hover-color);
+    background-color: var(--hover-color);
+    background-image: url(../images/icon\ check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
 .modal-checkbox a {
     text-decoration: underline;
     color: var(--hover-color);
 }
-/* .checkbox {
-    appearance: none;
-} */
-.modal-checkbox:checked + .modal-checkbox-icon {
-    border-color: var(--hover-color);
-    background-image: url(../images/igor.jpg);
-}
-
 .send-form-button {
     display: flex;
     cursor: pointer;
