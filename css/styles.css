@@ -598,6 +598,7 @@ body {
 }
 .modal fieldset {
     border: none;
+    padding: 0;
 }
 .input {
         font-size: 12px;
