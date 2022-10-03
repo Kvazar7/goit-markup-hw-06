@@ -450,6 +450,9 @@ body {
         color: rgba(255, 255, 255, 0.6);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+.footer-mail input:focus {
+    color: var(--fourth-color);
+}
 .Subscribe-button {
     display: flex;
     cursor: pointer;
@@ -600,10 +603,10 @@ body {
     color: var(--primary-color);
     margin-bottom: 12px;
 }
-.input {
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
+.input-list {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 }
 .modal-close-button {
     display: flex;
@@ -630,15 +633,23 @@ body {
 .modal-element:not(:last-child) {
     margin-bottom: 10px;
 }
-.input label {
+.input-list label {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 .input-field input {
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
     padding: 12px 42px;
 }
 .input-field textarea {
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
     resize: none;
     height: 120px;
     padding: 12px 16px;
@@ -682,7 +693,7 @@ textarea {
     display: flex;
     justify-content: center;
     gap: 7px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .modal-checkbox-icon {
     width: 16px;
